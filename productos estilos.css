@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+
+}
+body{
+    background-color: rgb(48, 12, 0);
+    background-image: url(https://img.freepik.com/foto-gratis/vintage-cubiertos-rusticos-viejos-oscuro_1220-4886.jpg?t=st=1651721799~exp=1651722399~hmac=ed74a770deafe7f469c16ce52d91e93621c939aa4afdfb054569fce21774e734&w=1380);
+    color: rgb(5, 44, 78);
+
+}
+
+.menu {
+    overflow: hidden;
+    background-color: rgb(18, 2, 2);
+    margin: 10px;
+  }
+  .menu a {
+    float: right;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:30px;
+  }
+  img{
+    display:  block;
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+  }
+
+h2{
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;
+    border: 2px inset hsl(257 , 19%, 93%);
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    text-decoration-line: underline;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(100, 153, 197);
+    font-size: 20px ;
+    text-align: justify;
+}
+h1{
+  font-size: 28px;
+  font-family: 'Patrick Hand', cursive;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+  
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(10px auto);
+    padding: 10px;
+   
+  }
+  .container div {
+    background: #19184281;
+    padding: 2em;
+    
+  }
+  .container div:hover {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #6430a7;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(42, 16, 90);
+      }
+   
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      background-image: url("https://img.freepik.com/foto-gratis/vintage-cubiertos-rusticos-viejos-oscuro_1220-4886.jpg?t=st=1651721799~exp=1651722399~hmac=ed74a770deafe7f469c16ce52d91e93621c939aa4afdfb054569fce21774e734&w=1380");
+      background-color: #172e47;
+    }
+    
+    img {
+      display: block;
+      border: 2px solid whitesmoke;
+      border-radius: 12px;
+      padding: 10px;
+      width: 90%;
+      margin:10px;
+    }
+    p {
+        font-size: 24px;
+      
+      }
+      h2 {
+        font-size: 25px;
+        font-family: 'Patrick Hand', cursive;
+        border: 10px inset rgb(15, 43, 121);
+        color: rgb(37, 47, 182);
+        
+        padding: 10px 10px 10px 20px;
+        margin: 10px;
+      }
+    
+      .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #0e0f5765;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(42, 16, 90);
+      }
+  
+      .menu a {
+        float: none;
+        width: 100%;
+        margin: 2px;
+        padding: 6px 16px;
+        font-size: 16px;
+      }
+
+  }

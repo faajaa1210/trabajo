@@ -1,73 +1,125 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid rgb(19, 10, 10);
-    border-radius: 4px;
-    resize: vertical;
-    background-color: rgb(185, 21, 131);
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    font-family: "Indie Flower", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  input[type="submit"],
-  input[type="reset"] {
-    background-color: #0e0e0e;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type="submit"]:hover,
-  input[type="reset"]:hover {
-    background-color: #f07706;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand', cursive;
+}
+.registro{
+  width: 500px;
+  background: #426991;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(255, 255, 255);
+}
+.registro h4 {
+  font-size: 22px;
+  margin-bottom: 20px;   
+}
+.controls{
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid;
+  font-family: 'calibri';
+  font-size: 18px;
+}
+.resgistro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+.resgistro a{
+  color: white;
+  text-decoration: none;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .col-25,
-    .col-75,
-    input[type="submit"],
-    input[type="reset"] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  
+.registro a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.registro .botons {
+  width: 100%;
+  background: #eb3333;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,0,5),rgba(0,0,0,0,5));
+  background-image: url(https://img.freepik.com/foto-gratis/vintage-cubiertos-rusticos-viejos-oscuro_1220-4886.jpg?t=st=1651721799~exp=1651722399~hmac=ed74a770deafe7f469c16ce52d91e93621c939aa4afdfb054569fce21774e734&w=1380);
+  height: 100vh;
+  background-size: cover;
+}
+.logo {
+  background: url(https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2018-8/8807-Spotlight_Restaurant-400x400-icon1.png?w=315&h=840) no-repeat 50% 50%;
+  background-size: contain;
+  width: 180px;
+  height: 80px;
+  float: center ;
+}
+.redes {
+  float: right;
+  transform: translateY(-25px);
+}
+.redes {
+  padding: 0px 10px 0px;
+  color: white;
+  font-size: 20px;
+}
+
+.redes a:hover {
+  color: rgb(137, 34, 34);
+}
+.sociales {
+  float: unset;
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sociales a {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+}
+
+.sociales a:hover {
+  background-color: black;
+  background-image: none;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.instagram {
+  background-image: linear-gradient(rgb(168, 0, 214), red, yellow);
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.whatsapp{
+    background: greenyellow;
+    color: white;
+}

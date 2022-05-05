@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trabajo.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant Benja</title>
+	<link rel="stylesheet" href="estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
-    <form>
-        <h1>FORMULARIO</h1>
-        <div class="form-group">
-            <label for="name5">Nombre del local</label>
-            <input type="text" class="form-control" id="name" placeholder="juan perez" required>
+	<nav>
+		<div class="logo"></div>
+		<a class="btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="menu">
+			<a href="#inicio">Inicio</a>
+			<a href="productos.html">pedidos</a>
+			<a href="#sucursales">Sucursales</a>
+			<a href="registro.html" > Registrate</a>
+		</div>
+	</nav>
+    <section class="buscar">
+        <div class="titulo">
+            <h2>RESTAURANT BENJA</h2>
         </div>
-        <div class="form-group">
-            <label>Tipo de Negocio</label>
-                <select name="negocio">
-                    <option value="lp">Ninguno</option>
-                    <option value="ch">Restaurante</option>
-                    <option value="ch">Café</option>
-                    <option value="lp">Bebidas</option>
-                    <option value="ch">Flores</option>
-                    <option value="ch">Mercado</option>
-                    <option value="lp">Healthcare & beauty</option>
-                    <option value="ch">Tienda</option>
-                    <option value="ch">Quiosco</option>
-                    <option value="ch">Mascotas</option>
-                    <option value="ch">Farmacia</option>
-                </select>
+        <div class="barra">
+            <h3>NO OLVIDES REGISTRARTE</h3>
+            <br>
+            <form>
+                <input type="search"placeholder="Ej.postres,cenas,almuersos.etc ">
+                <input type="submit" value="Buscar">
+            </form>
         </div>
-        <div class="form-group">
-            <label for="fullName">Cantidad de Sucursales</label>
-            <input type="number" class="form-control" min="1" max="3" required>
+    </section>
+	<footer>
+            <div class="creditos">
+                <p>Benja  2022-2025 Izi Fabian H Parra</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a> 
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a> 
+				<a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+            </div>
+            <br>
         </div>
-        <div class="form-group">
-            <label for="text">Nombre</label>
-            <input type="email" class="form-control" id="email" placeholder="Fabian Parra" required>
+        <div class="sociales">
+            <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+			<a href="https://www.whatsapp.com/" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
         </div>
-        <div class="form-group">
-            <label for="fullName">nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="juan perez" required>
-        </div>
-        <div class="form-group">
-            <label for="email">email:</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-        </div>
-    </form>
+    </footer>
+
+<script type="text/javascript">
+    $(".btn").on("click", function(){
+        $('.menu').toggleClass("show");
+    });
+</script>
 </body>
 </html>

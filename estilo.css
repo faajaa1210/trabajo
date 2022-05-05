@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+}
+body{
+    background-image: url(https://img.freepik.com/foto-gratis/vintage-cubiertos-rusticos-viejos-oscuro_1220-4886.jpg?t=st=1651721799~exp=1651722399~hmac=ed74a770deafe7f469c16ce52d91e93621c939aa4afdfb054569fce21774e734&w=1380);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(15, 19, 59, 0.61);
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    background: url(https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2018-8/8807-Spotlight_Restaurant-400x400-icon1.png?w=315&h=840) no-repeat 50% 50%;
+    background-size: contain;
+    margin-left: 50px;
+    width: 10%;
+    height: 80%;
+    float: left;
+}
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #b66129;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: rgb(206, 99, 12);
+}
+.menu{
+    position: absolute;
+    right: 20px;
+}
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.buscar .titulo{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.buscar h3{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.buscar input[type="search"]{
+    border-radius: 40px;
+    border: none;
+    width: 70%;
+    font-size: 20px;
+    padding: 25px;
+}
+.buscar input[type="search"]:hover{
+    border: none;
+}
+.buscar input[type="submit"]{
+    background-color: #441522;
+    color: white;
+    border: none;
+    padding: 15px 50px 15px 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.buscar{
+    position: static;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+.redes {
+    float: right;
+    transform: translateY(-25px);
+    padding: 0px 10px 0px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .redes a:hover {
+    color: rgb(137, 34, 34);
+  }
+  .sociales {
+    float: unset;
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .sociales a {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .sociales a:hover {
+    background-color: black;
+    background-image: none;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .instagram {
+    background-image: linear-gradient(rgb(168, 0, 214), red, yellow);
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .whatsapp{
+      background: greenyellow;
+      color: white;
+  }
+@media only screen and (max-width: 650px){
+    .logo{
+        margin-left: 40px;
+        width: 40%;
+        height: 50%;
+    }
+    .buscar .titulo{
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    .buscar h3{
+        font-size: 40px;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .show {
+        max-height: 200px;
+    }
+}
